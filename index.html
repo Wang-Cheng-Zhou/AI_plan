@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>神秘AI塔罗占卜</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <div class="page-shell">
+        <div class="hero-panel">
+            <div class="hero-copy">
+                <p class="eyebrow">AI 塔罗占卜</p>
+                <h1>揭开未来的神秘篇章</h1>
+                <p>输入你的问题，让三张塔罗牌带你进入深紫星夜中的智慧解读。</p>
+            </div>
+            <form class="oracle-form" id="oracleForm">
+                <label for="question">你的问题</label>
+                <textarea id="question" placeholder="例如：我最近事业运如何？" rows="3"></textarea>
+                <button type="submit" id="startButton">开始占卜</button>
+            </form>
+        </div>
+
+        <section class="cards-section">
+            <div class="cards-grid" id="cardsGrid">
+                <div class="card-card" data-index="0">
+                    <div class="card-inner">
+                        <div class="card-face card-front"></div>
+                        <div class="card-face card-back"><span class="card-label">占卜</span></div>
+                    </div>
+                </div>
+                <div class="card-card" data-index="1">
+                    <div class="card-inner">
+                        <div class="card-face card-front"></div>
+                        <div class="card-face card-back"><span class="card-label">揭示</span></div>
+                    </div>
+                </div>
+                <div class="card-card" data-index="2">
+                    <div class="card-inner">
+                        <div class="card-face card-front"></div>
+                        <div class="card-face card-back"><span class="card-label">未来</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="result-panel" id="resultPanel">
+            <div class="result-shell">
+                <p class="result-tag">你的占卜结果</p>
+                <p class="result-question" id="resultQuestion"></p>
+                <div class="result-cards" id="resultCards"></div>
+                <p class="result-text" id="resultText"></p>
+            </div>
+        </section>
+    </div>
+
+    <div class="background-stars"></div>
+    <script src="script.js"></script>
+</body>
+
+</html>
